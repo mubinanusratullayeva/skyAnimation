@@ -1,0 +1,193 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(130, 170, 245);
+    height: 100vh;
+    position: relative;
+}
+
+.sun{
+    position: absolute;
+    top: 30%;
+    right: 30%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 500px;
+    height: 500px;
+    animation-name: sUn;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+.sunshine{
+   display: inline-block;
+   position: absolute;
+   width: 8px;
+   height: 100px;
+   background-color: yellow;
+}
+
+.sunShine1{
+    transform: rotate(50deg);
+    top: -71px;
+    right: 152px;
+}
+
+.sunShine2{
+    transform: rotate(64deg);
+    top: -14px;
+    right: 118px;
+}
+
+.sunShine3{
+    transform: rotate(103deg);
+    top: 60px;
+    right: 114px;
+}
+
+.sunShine4{  
+    transform: rotate(121deg);
+    top: 119px;
+    right: 147px;
+}
+
+.sunShine5{
+    transform: rotate(152deg);
+    top: 154px;
+    right: 203px;
+}
+
+.sunShine6{
+    transform: rotate(192deg);
+    top: 163px;
+    right: 279px;
+}
+
+.sunShine7{
+    transform: rotate(152deg);
+    top: -105px;
+    left: 203px;
+}
+
+.sunShine12{
+    transform: rotate(192deg);
+    top: -105px;
+    left: 279px;
+}
+
+.sunShine11{
+    transform: rotate(-50deg);
+    top: -71px;
+    left: 152px;
+}
+
+.sunShine10{
+    transform: rotate(-64deg);
+    top: -14px;
+    left: 118px;
+}
+
+.sunShine9{
+    transform: rotate(-103deg);
+    top: 60px;
+    left: 114px;
+}
+
+.sunShine8{
+    transform: rotate(-121deg);
+    top: 119px;
+    left: 147px;
+}
+.mainSun{
+    background-color: yellow;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    animation-name: mainsun;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes sUn {
+    1%{
+        top: 1000px;
+        left: 5px;
+    }
+    100%{
+        top: 40px;
+        left: 1100px;
+    }
+}
+
+@keyframes mainsun {
+    0%{
+        box-shadow: rgba(255, 255, 255, 0);
+    }
+    100%{
+        box-shadow: -6px -6px 67px 36px yellow;
+        -webkit-box-shadow: -6px -6px 67px 36px yellow;
+        -moz-box-shadow: -6px -6px 67px 36px yellow;
+    }
+}
+
+.cloud{
+    position: absolute;
+    bottom: 511px;
+    position: relative;
+    animation-name: clouds;
+    animation-duration: 10s;
+    right: -1200px;
+    animation-iteration-count: infinite;
+}
+
+.mainCloud{
+    position: absolute;
+    width: 400px; height: 400px;
+    background-color: #a3d3f575;
+    -webkit-clip-path: polygon(93% 7%, 98% 13%, 97% 19%, 93% 24%, 86% 24%, 82% 24%, 80% 29%, 80% 35%, 74% 39%, 65% 38%, 60% 31%, 54% 30%, 47% 35%, 40% 38%, 32% 36%, 32% 30%, 35% 21%, 31% 17%, 26% 14%, 24% 7%, 27% 2%, 35% 1%, 41% 1%, 45% 2%, 50% 7%, 56% 8%, 60% 5%, 64% 1%, 69% 1%, 75% 3%, 79% 9%, 85% 4%);
+    clip-path: polygon(93% 7%, 98% 13%, 97% 19%, 93% 24%, 86% 24%, 82% 24%, 80% 29%, 80% 35%, 74% 39%, 65% 38%, 60% 31%, 54% 30%, 47% 35%, 40% 38%, 32% 36%, 32% 30%, 35% 21%, 31% 17%, 26% 14%, 24% 7%, 27% 2%, 35% 1%, 41% 1%, 45% 2%, 50% 7%, 56% 8%, 60% 5%, 64% 1%, 69% 1%, 75% 3%, 79% 9%, 85% 4%);
+}
+
+.mainCloud:nth-child(1){
+    top: 0;
+    left: 0;
+}
+
+.mainCloud:nth-child(2){
+    top: 200px;
+    left: 120px;
+}
+
+.mainCloud:nth-child(3){
+    top: 80px;
+    left: 300px;
+}
+
+.mainCloud:nth-child(4){
+    left: 636px;
+}
+
+.mainCloud:nth-child(5){
+    left: 700px;
+    top: 270px;
+}
+
+.mainCloud:nth-child(6){
+    right: 0;
+    top: 78px;
+}
+
+@keyframes clouds {
+    0%{
+        right: -1000px;
+    }
+    100%{
+        right: 100px;
+        transform: scale(1.5);
+    }
+}
